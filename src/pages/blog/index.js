@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 
@@ -32,6 +32,7 @@ export const query = graphql`
           slug
         }
         id
+        excerpt
       }
     }
   }
